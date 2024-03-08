@@ -1,0 +1,10 @@
+<tr (dblclick)="onSelect(station)">
+    <td>{{ station.id}}</td>
+            <td>{{ station.name }}</td>
+            <td>{{ station.state}}</td>
+            <td>{{ station.type === 'R' ? 'Reference' : 'Subordinate' }}</td>
+            <td>{{ station.lat }}</td>
+            <td>{{ station.lng }}</td>
+            <td>{{ station.reference_id.length === 0 ? station.id : station.reference_id }}</td>
+</tr>    
+    

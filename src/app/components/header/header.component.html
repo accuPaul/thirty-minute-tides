@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <h1>{{ title }}</h1>
+        </a>
+        <div class="text-end">
+           <app-button
+             variant="{{ stationSelected ? 'success' : 'active'}}"
+             text="{{ stationSelected ? 'Change Station' : 'Select Station' }}"
+             (btnClick)="toggleShowSelection()"
+             >
+            </app-button>
+        </div>
+    </div>
+</nav>

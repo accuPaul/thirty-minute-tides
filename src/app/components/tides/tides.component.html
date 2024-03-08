@@ -1,0 +1,22 @@
+<div class="container-fluid mt-1">
+    <app-tide-selector *ngIf="showSelector" (siteSelection)="onSiteSelection($event)"></app-tide-selector>
+    <div *ngIf="!showSelector">
+      <div class="card mb-2">
+        <div class="card-body text-center">
+          <h3>Tides for <b>{{ station?.name }}, {{ station?.state }} </b></h3>
+          <p class="text-muted">Latitude: {{ station?.lat }} Longitude: {{ station?.lng }}</p>
+          <div class="card-footer text-muted" *ngIf="station?.type === 'S'">
+            Subordinate tide locations do not have interval data. Instead the daily high and low tide is shown
+        </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <app-tide-item
+          *ngFor="let tide of prediction.predictions"
+          [tideHeight]="tide">
+      </app-tide-item>  
+        </div>
+      </div>
+    </div>
+</div>
