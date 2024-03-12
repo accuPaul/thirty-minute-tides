@@ -97,7 +97,8 @@
           "builder": "angular-cli-ghpages:deploy",
           "options" : {
             "baseHref": "https://accupaul.github.io/thirty-minute-tides",
-            "name": "30-Minute Tides"
+            "name": "30-Minute Tides",
+            "dir": "dist/"
           }
         }
       }
