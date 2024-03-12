@@ -1,7 +1,6 @@
 import { EventEmitter, Injectable, Output } from '@angular/core';
 import { Observable, Subject, of } from 'rxjs';
 import { Station } from '../../Station'
-import { STATION } from '../../mock_station';
 import { HttpClient } from '@angular/common/http';
 
 

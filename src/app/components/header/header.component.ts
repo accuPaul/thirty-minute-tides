@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Subscription } from 'rxjs';
 import { TideSelectionService } from '../../services/tide-selection.service';
 import { ButtonComponent } from '../button/button.component';
 

@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Prediction } from '../../Prediction';
-import { PREDICTION } from '../../mock_prediction';
 import { HttpClient } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Station } from '../../Station';
 
 @Injectable({

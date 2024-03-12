@@ -1,9 +1,8 @@
 import { NgClass, NgFor, NgIf } from '@angular/common';
-import { Component, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { Station } from '../../../Station';
 import { TideSelectionService } from '../../services/tide-selection.service';
 import { TideStationComponent } from '../tide-station/tide-station.component';
-import { NgModel } from '@angular/forms';
 import { SortButtonComponent } from '../sort-button/sort-button.component';
 
 @Component({
