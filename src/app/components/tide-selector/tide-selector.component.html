@@ -30,7 +30,7 @@
         <th class="sortable">Reference Station</th>
     </thead>
     <tbody>
-        <tr *ngFor="let station of filteredList" (dblclick)="setSelection(station)">
+        <tr *ngFor="let station of filteredList" (click)="setSelection(station)">
             <td>{{ station.id}}</td>
                     <td>{{ station.name }}</td>
                     <td>{{ station.state}}</td>
