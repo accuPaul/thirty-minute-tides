@@ -97,7 +97,7 @@
           "builder": "angular-cli-ghpages:deploy",
           "options" : {
             "buildTarget" : "thirty-minute-tides:build:production",
-            "baseHref": "/thirty-minute-tides",
+            "baseHref": "/thirty-minute-tides/",
             "name": "accupaul",
             "email": "paul.mount@gmail.com"
           }
